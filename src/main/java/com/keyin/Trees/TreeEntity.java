@@ -1,4 +1,4 @@
-package Trees;
+package com.keyin.Trees;
 import jakarta.persistence.*;
 
 @Entity

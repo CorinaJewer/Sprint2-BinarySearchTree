@@ -1,4 +1,4 @@
-package Trees;
+package com.keyin.Trees;
 
 public class BinaryNode {
 

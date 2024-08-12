@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<style>
+    body {
+        font-family: Arial;
+        background-color: #F2F2F2;
+        color: black;
+    }
+    .container {
+        width: 85%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+      color: black;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 24px;
+        color: black;
+        margin-bottom: 16px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 24px;
+    }
+    li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .button {
+        padding: 16px 36px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #45a049;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        white-space: nowrap;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: green;
+    }
+    .section {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+</style>
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Home Page</title>
 </head>
+
 <body>
-$END$
+<div class="container">
+    <h1>Binary Trees: A Key Data Structure</h1>
+    <div class="section">
+        <p>A Binary Tree is a type of data structure where each node has at most two children,
+            referred to as the left child and the right child.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Binary Search Trees (BSTs)</h2>
+        <P>A Binary Search Tree (BST) is a specific type of binary tree where:</P>
+        <ul>
+            <li>The left subtree of a node contains only nodes with values less than the node's value.</li>
+            <li>The right subtree of a node contains only nodes with values greater than the node's value.</li>
+        </ul>
+    </div>
+    <button class="button" onclick="window.location.href='/enter-numbers'">Create a Binary Search Tree</button>
+</div>
 </body>
 </html>

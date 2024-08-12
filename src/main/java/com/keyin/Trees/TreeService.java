@@ -1,7 +1,8 @@
-package Trees;
+package com.keyin.Trees;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -13,11 +14,23 @@ public class TreeService {
     @Autowired
     private BinaryTreeJsonConverter jsonConverter;
 
-    public TreeEntity createTree(List<Integer> numbers) {
+    public TreeEntity createBST(List<Integer> numbers) {
         BinarySearchTree tree = new BinarySearchTree();
         for (Integer number : numbers) {
-            tree.insert(number);
+            tree.insertBST(number);
         }
+        String treeJson = jsonConverter.toJson(tree);
+        TreeEntity treeStructure = new TreeEntity();
+        treeStructure.setInputNumbers(numbers.toString());
+        treeStructure.setTreeRepresentation(treeJson);
+        return treeRepository.save(treeStructure);
+    }
+
+    public TreeEntity createBalancedTree(List<Integer> numbers) {
+        List<Integer> sortedNumbers = new ArrayList<>(numbers);
+        Collections.sort(sortedNumbers);
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insertBalancedTree(sortedNumbers);
         String treeJson = jsonConverter.toJson(tree);
         TreeEntity treeStructure = new TreeEntity();
         treeStructure.setInputNumbers(numbers.toString());

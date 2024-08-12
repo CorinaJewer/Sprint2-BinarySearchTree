@@ -1,4 +1,4 @@
-package Trees;
+package com.keyin.Trees;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,19 +35,26 @@ public class TreeController {
     }
 
     @PostMapping("/process-numbers")
-    public String processNumbers(@RequestParam String numbers, Model model) {
-        TreeEntity treeEntity = treeService.createTree(parseNumbers(numbers));
+    public String processNumbers(@RequestParam String numbers, @RequestParam(required = false, defaultValue = "false") boolean balanced, Model model)  {
+        TreeEntity treeEntity;
+        if (balanced) {
+            treeEntity = treeService.createBalancedTree(parseNumbers(numbers));
+        } else {
+            treeEntity = treeService.createBST(parseNumbers(numbers));
+        }
         String treeJson = treeEntityJsonConverter.toJson(treeEntity);
         model.addAttribute("treeJson", treeJson);
         return "numbers";
     }
 
     private List<Integer> parseNumbers(String numbers) {
-        String[] numberStrings = numbers.split(",");
+        String[] individualNumbers = numbers.split(",");
         List<Integer> result = new ArrayList<>();
-        for (String numberString : numberStrings) {
-            result.add(Integer.parseInt(numberString.trim()));
-        }
+        for (String individualNumber : individualNumbers) {
+            int number = Integer.parseInt(individualNumber.trim());
+            if (!result.contains(number)) {
+                result.add(number);
+        }}
         return result;
     }
 

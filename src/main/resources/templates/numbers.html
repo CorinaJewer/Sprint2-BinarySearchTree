@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<style>
+  body {
+      font-family: Arial;
+      background-color: #F2F2F2;
+      color: black;
+
+  }
+  .container {
+        width: 85%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+  }
+  h1 {
+      color: black;
+      margin-bottom:24px;
+  }
+  form {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      margin-bottom: 24px;
+  }
+  label {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 16px;
+      color: black;
+  }
+  input[type="text"] {
+      width: 30%;
+      padding: 16px;
+      margin: 8px;
+      border: 1px solid grey;
+      border-radius: 4px;
+      font-size: 16px;
+  }
+  button {
+      background-color: #45a049;
+      margin: 16px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 14px 18px;
+      font-size: 16px;
+      font-weight:bold;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  button:hover {
+      background-color: green;
+  }
+  h2 {
+      margin-top: 24px;
+      color: black;
+  }
+  .tree-container {
+      white-space: pre-wrap;
+      font-family: monospace;
+      background: white;
+      border-radius: 4px;
+      padding: 16px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      color: black;
+  }
+  .previous-trees {
+      margin-top: 24px;
+  }
+  .previous-tree {
+      margin-bottom: 16px;
+      padding: 16px;
+      background: white;
+      border: 1px solid grey;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      font-family: monospace;
+  }
+  .previous-tree pre {
+      white-space: pre-wrap;
+      word-break: break-all;
+      overflow-wrap: break-word;
+      max-width: 100%;
+  }
+  .footer{
+     justify-content: center;
+  }
+  .return {
+      background-color: black;
+      margin:16px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 20px, 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      transition: background-color 0.3s ease-in-out;
+  }
+  .return:hover {
+      background-color:green ;
+  }
+
+  .numbers{
+      display: flex;
+      align-items:center;
+      gap:8px;
+  }
+
+  select {
+    padding: 8px 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+</style>
+
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Sprint2</title>
 </head>
+
 <body>
-$END$
+<div class="container">
+  <h1>Build Your Tree</h1>
+  <form class = "numbers" th:action = "@{/process-numbers}" method = "post">
+    <label for = "numbers">Please enter your numbers (comma-separated):</label>
+    <input type = "text" id = "numbers" name = "numbers" required>
+
+    <label for = "treeType">Tree Type:</label>
+    <select id = "treeType" name = "balanced">
+      <option value = "false">Regular BST </option>
+      <option value = "true">Balanced BST</option>
+    </select>
+
+    <button type = "submit">Create Tree</button>
+  </form>
+
+  <h2>Newly Created Binary Search Tree</h2>
+  <pre class = "tree-container" th:utext = "${treeJson}"></pre>
+
+  <h2>Previous Binary Search Trees</h2>
+  <form th:action = "@{/previous-trees}" method = "get">
+    <button type = "submit">Load Previous Trees</button>
+    <div th:each = "tree : ${previousTreesJson}" class = "previous-tree">
+      <pre th:utext = "${tree}"></pre>
+    </div>
+  </form>
+
+  <div class = "footer">
+    <button class = "return" onclick = "window.location.href='/'">Return</button>
+  </div>
+</div>
+
 </body>
 </html>
+

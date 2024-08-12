@@ -1,10 +1,10 @@
-package Trees;
+package com.keyin.Trees;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 
 @Component
 public class TreeEntityJsonConverter {
@@ -22,16 +22,16 @@ public class TreeEntityJsonConverter {
             JsonNode treeJsonNode = objectMapper.readTree(treeEntity.getTreeRepresentation());
             node.setAll((ObjectNode) treeJsonNode);
             return objectMapper.writeValueAsString(node);
-        } catch (IOException e) {
-            throw new RuntimeException("Error serializing TreeEntity to JSON", e);
+        } catch (JsonProcessingException exception) {
+            throw new RuntimeException("Error serializing TreeEntity to JSON", exception);
         }
     }
 
     public TreeEntity fromJson(String json) {
         try {
             return objectMapper.readValue(json, TreeEntity.class);
-        } catch (IOException e) {
-            throw new RuntimeException("Error deserializing TreeEntity from JSON", e);
+        } catch (JsonProcessingException exception) {
+            throw new RuntimeException("Error deserializing TreeEntity from JSON", exception);
         }
     }
 }
