@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e949d72-78af-42df-9f61-327c6baa4848" name="Changes" comment="Removed redundant sort in createBalancedTree Method.">
+    <list default="true" id="2e949d72-78af-42df-9f61-327c6baa4848" name="Changes" comment="Code Refactor.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,12 +155,33 @@
       <option name="project" value="LOCAL" />
       <updated>1723490264493</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code Refactor.">
+      <option name="closed" value="true" />
+      <created>1723490911458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723490911458</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Balanced BST Option" />
     <MESSAGE value="Removed redundant sort in createBalancedTree Method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant sort in createBalancedTree Method." />
+    <MESSAGE value="Code Refactor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Refactor." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinaryNode.java</url>
+          <line>5</line>
+          <properties field="left" class="com.keyin.Trees.BinaryNode" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

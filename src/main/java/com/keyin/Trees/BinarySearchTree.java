@@ -45,23 +45,21 @@ public class BinarySearchTree {
         }
     }
 
-    public void insertBalancedTree(List<Integer> numbers) {
-        Collections.sort(numbers);
-        root = createBalancedTree(numbers, 0, numbers.size() - 1);
+    public void insertBalancedTree(List<Integer> sortedNumbers) {
+        root = createBalancedTree(sortedNumbers, 0, sortedNumbers.size() - 1);
     }
 
-    private BinaryNode createBalancedTree(List<Integer> numbers, int start, int end) {
+    private BinaryNode createBalancedTree(List<Integer> sortedNumbers, int start, int end) {
         if (start > end) {
             return null;
         }
         int mid = (start + end) / 2;
-        BinaryNode node = new BinaryNode(numbers.get(mid));
-        node.setLeft(createBalancedTree(numbers, start, mid - 1));
-        node.setRight(createBalancedTree(numbers, mid + 1, end));
+        BinaryNode node = new BinaryNode(sortedNumbers.get(mid));
+        node.setLeft(createBalancedTree(sortedNumbers, start, mid - 1));
+        node.setRight(createBalancedTree(sortedNumbers, mid + 1, end));
         return node;
     }
 
-    // Sort Numbers
     // Calculate middle index
     // Create new node with value for middle index
     // Create left child of node
