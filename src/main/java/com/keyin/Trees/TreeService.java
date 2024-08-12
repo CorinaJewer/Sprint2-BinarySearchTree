@@ -27,9 +27,8 @@ public class TreeService {
     }
 
     public TreeEntity createBalancedTree(List<Integer> numbers) {
-        List<Integer> sortedNumbers = new ArrayList<>(numbers);
         BinarySearchTree tree = new BinarySearchTree();
-        tree.insertBalancedTree(sortedNumbers);
+        tree.insertBalancedTree(numbers);
         String treeJson = jsonConverter.toJson(tree);
         TreeEntity treeStructure = new TreeEntity();
         treeStructure.setInputNumbers(numbers.toString());
