@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e949d72-78af-42df-9f61-327c6baa4848" name="Changes" comment="">
+    <list default="true" id="2e949d72-78af-42df-9f61-327c6baa4848" name="Changes" comment="Added Balanced BST Option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/RESTServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/RESTServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinaryNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinaryTreeJsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinaryTreeJsonConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeEntityJsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeEntityJsonConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/keyin/Trees/TreeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/numbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/numbers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/keyin/BinaryTreeJsonConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/keyin/BinaryTreeJsonConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/keyin/TreeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/keyin/TreeServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "CorinaJewer"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CorinaJewer&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CorinaJewer/Sprint2-BinarySearchTree.git",
-    "accountId": "b167f5e6-83ec-4eb4-ac52-658796b1b7d6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CorinaJewer/Sprint2-BinarySearchTree.git&quot;,
+    &quot;accountId&quot;: &quot;b167f5e6-83ec-4eb4-ac52-658796b1b7d6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -60,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.RESTServiceApplication.executor": "Run",
-    "Application.com.keyin.RESTServiceApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.BinaryTreeJSONConverterTest.executor": "Run",
-    "JUnit.TreeServiceTest.executor": "Run",
-    "Maven.Sprint2-BinarySearchTree [package].executor": "Run",
-    "Maven.Sprint2-BinarySearchTree [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/keyinstudent/Desktop/SDAT/Sprint2-BinarySearchTree"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.RESTServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.keyin.RESTServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.BinaryTreeJSONConverterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TreeServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint2-BinarySearchTree [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint2-BinarySearchTree [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/keyinstudent/Desktop/SDAT/Sprint2-BinarySearchTree&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.com.keyin.RESTServiceApplication">
     <configuration name="RESTServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.keyin.Trees.RESTServiceApplication" />
@@ -151,17 +137,19 @@
       <option name="presentableId" value="Default" />
       <updated>1723066424424</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Balanced BST Option">
+      <option name="closed" value="true" />
+      <created>1723485708754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723485708754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/keyin/Trees/BinarySearchTree.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Balanced BST Option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Balanced BST Option" />
   </component>
 </project>
